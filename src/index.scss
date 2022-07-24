@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.input {
+  display: flex;
+  align-items: center;
+  .input--name {
+    font-weight: 600;
+    width: 120px;
+    text-align: center;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .input--id {
+    font-weight: 500;
+    margin-left: 20px;
+    outline: none;
+  }
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
